@@ -1,0 +1,28 @@
+
+#nav{
+    display: flex;
+    padding: 20px;
+    position: sticky;
+    top: 0;
+    right: 0;
+    width: 100%;
+    background-color: #fff;
+    color: #1A1A1A;
+}
+
+.nav-left, .nav-right{
+    width: 50%;
+}
+
+.nav-right{
+    text-align: right;
+}
+
+.logo-text{
+    margin-left: 8.3px;
+    font-family: "Inter", sans-serif;
+}
+
+.cart-icon{
+    margin-right: 22px;
+}

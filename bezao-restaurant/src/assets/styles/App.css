@@ -1,0 +1,57 @@
+
+
+/*****************
+* HEADER
+******************/
+#header{
+    background-color: var(--tomaato);
+    min-height: 100vh;
+    padding: 52px 16px;
+    color: #fff;
+    position: relative;
+}
+
+.subtext{
+    margin-top: 8px;
+    margin-bottom: 18px;
+}
+
+.search-input-container{
+    background-color: #fff;
+    padding: 17px;
+    border-radius: 6px;
+    margin-top: 8px;
+}
+
+.search-input-container > input{
+    border: none;
+    outline: none;
+}
+
+.search-input-container > input::placeholder{
+    color: #B5B5BD;
+}
+
+.search-icon{
+    color: #B5B5BD;
+    vertical-align: middle;
+    margin-right: 12px;
+    font-size: 19px;
+}
+
+.header-dish{
+    width: 251px;
+    height: 251px;
+}
+
+.header-vector1{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.header-vector2{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}

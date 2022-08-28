@@ -1,0 +1,27 @@
+
+.tab{
+    margin-top: 20px;
+    margin-bottom: 25px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 3px;
+    /* width: 100%; */
+    display: flex;
+    overflow-x: scroll;
+}
+
+.tab > .menu-item{
+    padding: 7px;
+    margin-right: 3px;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    color: #4D4D4D;
+    text-transform: capitalize;
+}
+
+.menu-item.active{
+    background-color: var(--tomaato);
+    color: #fff;
+}

@@ -8,6 +8,7 @@
     width: 100%;
     background-color: #fff;
     color: #1A1A1A;
+    z-index: 1000;
 }
 
 .nav-left, .nav-right{

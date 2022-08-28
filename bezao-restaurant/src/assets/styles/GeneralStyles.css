@@ -23,6 +23,10 @@ body{
 /*********************
 * UTILS
 **********************/
+.d-flex{
+    display: flex;
+}
+
 .txt-center{
     text-align: center;
 }
@@ -35,6 +39,21 @@ body{
     text-align: right;
 }
 
+.txt-capitalize{
+    text-transform: capitalize;
+}
+
+.txt-tomato{
+    color: var(--tomaato);
+}
+
+.txt-dark{
+    color: var(--darkGr);
+}
+
+.mb-8{
+    margin-bottom: 8px;
+}
 
 .fs-14{
     font-size: 14px;

@@ -3,7 +3,7 @@ import './Nav.css'
 import Logo from "../../assets/images/logo.svg";
 import { AiOutlineShoppingCart, AiOutlineMenu } from "react-icons/ai";
 
-const Nav = () => {
+const Nav = ({ toggler }) => {
   return (
     <nav id="nav">
         <div className='nav-left'>
@@ -12,7 +12,7 @@ const Nav = () => {
         </div>
         <div className='nav-right'>
             <AiOutlineShoppingCart className='cart-icon' />
-            <AiOutlineMenu />
+            <AiOutlineMenu onClick={toggler} />
         </div>
     </nav>
   )

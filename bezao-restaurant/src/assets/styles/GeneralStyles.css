@@ -20,12 +20,18 @@ body{
     font-family: "Lato", sans-serif;
 }
 
+a{
+    text-decoration: none;
+}
+
 /*********************
 * UTILS
 **********************/
 .d-flex{
     display: flex;
 }
+
+
 
 .txt-center{
     text-align: center;
@@ -43,6 +49,10 @@ body{
     text-transform: capitalize;
 }
 
+.txt-upper{
+    text-transform: uppercase;
+}
+
 .txt-tomato{
     color: var(--tomaato);
 }
@@ -51,9 +61,27 @@ body{
     color: var(--darkGr);
 }
 
+.txt-right{
+    text-align: right;
+}
+
+
+
+
 .mb-8{
     margin-bottom: 8px;
 }
+
+.mb-16{
+    margin-bottom: 16px;
+}
+
+.mr-11{
+    margin-right: 11px;
+}
+
+
+
 
 .fs-14{
     font-size: 14px;

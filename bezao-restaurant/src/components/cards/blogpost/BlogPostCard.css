@@ -1,0 +1,30 @@
+
+.blog-card{
+    width: 250px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    margin-bottom: 16px;
+    padding: 23px;
+}
+
+.blog-card > img{
+    width: 100%;
+}
+
+@media screen and (min-width: 350px) {
+    .menu-card{
+        width: 163px;
+        border-radius: 8px;
+        overflow: hidden;
+    }
+
+    .menu-card > img{
+        width: 100%;
+        height: 123px;
+    }
+
+    .content{
+        padding: 12px;
+    }
+}

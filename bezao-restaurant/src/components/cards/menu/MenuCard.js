@@ -5,7 +5,7 @@ import { TbShoppingCartPlus } from "react-icons/tb";
 const MenuCard = ({ name, price, img, desc }) => {
   return (
       <div className="menu-card">
-        <img src={img} alt={desc} />
+        <img src={img} alt={name} />
         <div className="content">
             <h4 className='fs-14 fw-700 txt-capitalize'>{name}</h4>
             <p className='fs-10 fw-400 txt-dark'>{desc}</p>

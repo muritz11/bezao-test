@@ -19,6 +19,11 @@
     background-color: transparent;
     color: #4D4D4D;
     text-transform: capitalize;
+    cursor: pointer;
+}
+
+.tab > .menu-item:hover{
+    background-color: #ccc;
 }
 
 .menu-item.active{

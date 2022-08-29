@@ -3,6 +3,8 @@ import './assets/styles/App.css';
 import Nav from './components/nav/Nav';
 import { FiSearch } from "react-icons/fi";
 import HeaderDish from "./assets/images/header dish.svg";
+import drawSoup from "./assets/images/draw soup.svg";
+import eggSauce from "./assets/images/fried egg sauce.svg";
 import vector1 from "./assets/images/Vector 1306.svg";
 import vector2 from "./assets/images/Vector 1307.svg";
 import menuDish from "./assets/images/menu dish.svg";
@@ -62,7 +64,9 @@ function App() {
         </div>
         <div className="menu">
           <MenuCard name={'jollof rice'} desc={'Fried potato/yam chips with egg sauce or any ...'} price={'1,500'} img={menuDish} />
+          <MenuCard name={'swallow with draw soup'} desc={'Fried potato/yam chips with egg sauce or any ...'} price={'1,500'} img={drawSoup} />
           <MenuCard name={'jollof rice'} desc={'Fried potato/yam chips with egg sauce or any ...'} price={'1,500'} img={menuDish} />
+          <MenuCard name={'fries with egg sauce'} desc={'Fried potato/yam chips with egg sauce or any ...'} price={'700'} img={eggSauce} />
           <MenuCard name={'jollof rice'} desc={'Fried potato/yam chips with egg sauce or any ...'} price={'1,500'} img={menuDish} />
           <MenuCard name={'jollof rice'} desc={'Fried potato/yam chips with egg sauce or any ...'} price={'1,500'} img={menuDish} />
         </div>
@@ -72,22 +76,25 @@ function App() {
       </section>
 
       <section id="testimonials">
-        <h2 className='section-header mb-8'>What our customers say about us</h2>
-        <p className="fs-12 txt-dark">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum.</p>
-        
-        <div className="testimonials">
-          <TestimonialCard 
-            img={customer} 
-            name={'john samson'} 
-            location={'Enugu, Nigeria'} comment={'White dwarf a still more glorious dawn awaits tingling of the spine emerged into consciousness Vangelis shores of the cosmic ocean. '} 
-          />
-        </div>
-        <div className="dots txt-center">
-          <span className="dot active"></span>
-          <span className="dot"></span>
-          <span className="dot"></span>
-          <span className="dot"></span>
-          <span className="dot"></span>
+        <div className="container">
+          <div className='test-left'>
+            <h2 className='section-header mb-8'>What our customers say about us</h2>
+            <p className="fs-12 txt-dark">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum.</p>
+          </div>
+          <div className="testimonials">
+            <TestimonialCard 
+              img={customer} 
+              name={'john samson'} 
+              location={'Enugu, Nigeria'} comment={'White dwarf a still more glorious dawn awaits tingling of the spine emerged into consciousness Vangelis shores of the cosmic ocean. '} 
+            />
+            <div className="dots txt-center">
+              <span className="dot active"></span>
+              <span className="dot"></span>
+              <span className="dot"></span>
+              <span className="dot"></span>
+              <span className="dot"></span>
+            </div>
+          </div>
         </div>
       </section>
 

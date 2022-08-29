@@ -1,11 +1,10 @@
 
 .blog-card{
-    width: 250px;
     border-radius: 8px;
     overflow: hidden;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-    margin-bottom: 16px;
     padding: 23px;
+    background-color: #fff;
 }
 
 .blog-card > img{

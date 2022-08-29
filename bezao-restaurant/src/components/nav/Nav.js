@@ -20,7 +20,7 @@ const Nav = ({ toggler }) => {
             <FiSearch className='cart-icon d-md-show fs-20' />
             <AiOutlineShoppingCart className='cart-icon fs-20' />
             <AiOutlineMenu onClick={toggler} className='d-md-none fs-20' />
-            <button className="secondary-btn border-none d-md-show mr-11">sign in</button>
+            <button className="secondary-btn signin-btn border-none d-md-show mr-11">sign in</button>
             <button className="primary-btn d-md-show">create account</button>
         </div>
     </nav>

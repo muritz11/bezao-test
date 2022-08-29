@@ -1,6 +1,8 @@
 
 #nav{
     display: flex;
+    justify-content: space-between;
+    align-items: center;
     padding: 20px;
     position: sticky;
     top: 0;
@@ -11,12 +13,11 @@
     z-index: 1000;
 }
 
-.nav-left, .nav-right{
-    width: 50%;
-}
-
 .nav-right{
     text-align: right;
+    color: #666;
+    display: flex;
+    align-items: center;
 }
 
 .logo-text{
@@ -26,4 +27,33 @@
 
 .cart-icon{
     margin-right: 22px;
+}
+
+@media screen and (min-width: 768px) {
+    .nav-links{
+        display: flex;
+    }
+
+    .nav-links a{
+        color: #666;
+    }
+
+    .nav-links .active{
+        color: var(--tomaato);
+    }
+
+    .nav-links .active::before{
+        content: '';
+        width: 10px;
+        background-color: var(--tomaato);
+    }
+
+    .nav-links li{
+        list-style-type: none;
+        /* padding: 15px 0; */
+    }
+
+    .nav-links li:not(.nav-links li:last-child){
+        margin-right: 48px;
+    }
 }

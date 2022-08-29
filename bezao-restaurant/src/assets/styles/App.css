@@ -174,3 +174,18 @@ footer{
 .arr{
     margin: 22px 26px;
 }
+
+.d-md-show{
+    display: none;
+}
+
+
+@media screen and (min-width: 768px) {
+    .d-md-none{
+        display: none;
+    }
+
+    .d-md-show{
+        display: initial;
+    }
+}

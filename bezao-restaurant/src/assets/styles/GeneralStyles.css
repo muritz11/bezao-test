@@ -147,3 +147,6 @@ a{
     vertical-align: middle;
 }
 
+.border-none{
+    border: none !important;
+}

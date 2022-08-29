@@ -87,9 +87,10 @@
 }
 
 #menu .menu{
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 16px;
+    column-gap: 16px;
     margin-bottom: 20px;
 }
 
@@ -183,7 +184,10 @@ footer{
 }
 
 
-
+.section-header{
+    font-size: 24px;
+    font-weight: 700;
+}
 
 .d-md-show{
     display: none;
@@ -236,6 +240,26 @@ footer{
         width: 225px;
         margin-top: 37px;
     }
+
+    #menu, #testimonials, #blog, footer{
+        padding: 30px 70px;
+    }
+
+    #menu .menu{
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 24px;
+    }
+
+    .menu-subheading{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 16px 0 40px;
+    }
+
+    .section-header{
+        font-size: 42px;
+    }
 }
 
 
@@ -258,4 +282,9 @@ footer{
         background-color: #fff;
         padding: 75px 100px;
     }
+    
+    #menu, #testimonials, #blog, footer{
+        padding: 30px 150px;
+    }
+
 }

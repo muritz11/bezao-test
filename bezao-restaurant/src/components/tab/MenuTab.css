@@ -7,7 +7,7 @@
     padding: 3px;
     /* width: 100%; */
     display: flex;
-    overflow-x: scroll;
+    overflow-x: auto;
 }
 
 .tab > .menu-item{
@@ -24,4 +24,10 @@
 .menu-item.active{
     background-color: var(--tomaato);
     color: #fff;
+}
+
+@media screen and (min-width: 768px) {
+    .tab{
+        margin: 0;
+    }
 }

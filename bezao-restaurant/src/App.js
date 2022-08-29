@@ -47,7 +47,6 @@ function App() {
             </div>
           </form>
           <div className="txt-center image">
-            {/* TODO add spin animation to img */}
             <img src={HeaderDish} className="header-dish" alt='' />
           </div>
         </section>
@@ -57,8 +56,10 @@ function App() {
 
       <section id="menu">
         <h4 className='fs-14 fw-700 txt-tomato mb-8'>MENU</h4>
-        <h2 className='fs-24 fw-700'>Current menu</h2>
-        <MenuTab />
+        <div className='menu-subheading'>
+          <h2 className='section-header'>Current menu</h2>
+          <MenuTab />
+        </div>
         <div className="menu">
           <MenuCard name={'jollof rice'} desc={'Fried potato/yam chips with egg sauce or any ...'} price={'1,500'} img={menuDish} />
           <MenuCard name={'jollof rice'} desc={'Fried potato/yam chips with egg sauce or any ...'} price={'1,500'} img={menuDish} />
@@ -71,7 +72,7 @@ function App() {
       </section>
 
       <section id="testimonials">
-        <h2 className='fs-24 fw-700 mb-8'>What our customers say about us</h2>
+        <h2 className='section-header mb-8'>What our customers say about us</h2>
         <p className="fs-12 txt-dark">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum.</p>
         
         <div className="testimonials">
@@ -91,7 +92,7 @@ function App() {
       </section>
 
       <section id="blog">
-        <h2 className='fs-24 fw-700 mb-8 txt-center'>Blog Our Latest News</h2>
+        <h2 className='section-header mb-8 txt-center'>Blog Our Latest News</h2>
         <p className="fs-14 txt-dark txt-center">Have you ever browsed food blogs like mine and wondered how to start a food blog of your very own? </p>
         
         <div className="blogposts">

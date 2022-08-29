@@ -11,6 +11,7 @@
     background-color: #fff;
     color: #1A1A1A;
     z-index: 1000;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 
 .nav-right{
@@ -30,6 +31,11 @@
 }
 
 @media screen and (min-width: 768px) {
+    #nav{
+        /* padding: 20px 60px; */
+        top: -90px;
+    }
+
     .nav-links{
         display: flex;
     }
@@ -55,5 +61,13 @@
 
     .nav-links li:not(.nav-links li:last-child){
         margin-right: 48px;
+    }
+}
+
+
+@media screen and (min-width: 1250px) {
+    #nav{
+        padding: 20px 100px;
+        top: -90px;
     }
 }

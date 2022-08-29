@@ -34,22 +34,25 @@ function App() {
       <Nav toggler={toggleNav} />
       <header id="header">
         <section className='header-content'>
-          <h1>Delicious meals at your convenience</h1>
-          <p className="subtext fs-12 fw-200">Order your meals from us and we will have it delivered at your doorstep.</p>
-          <form id="search">
+          <div className="copy">
+            <h1 className='fs-lg-64'>Delicious meals at your convenience</h1>
+            <p className="subtext fs-12 fw-200">Order your meals from us and we will have it delivered at your doorstep.</p>
+            <button className="primary-btn d-md-show header-cta">Get started</button>
+          </div>
+          <form id="search" className='d-md-none'>
             <label>Instant Order</label>
             <div className='search-input-container'>
               <FiSearch className='search-icon' />
               <input type="text" placeholder='Search for meal' value={state.search} onChange={(e) => setState({...state, search: e.target.value})} />
             </div>
           </form>
-          <div className="txt-center">
+          <div className="txt-center image">
             {/* TODO add spin animation to img */}
             <img src={HeaderDish} className="header-dish" alt='' />
           </div>
         </section>
-        <img src={vector1} className="header-vector1" alt='' />
-        <img src={vector2} className="header-vector2" alt='' />
+        <img src={vector1} className="header-vector1 d-md-none" alt='' />
+        <img src={vector2} className="header-vector2 d-md-none" alt='' />
       </header>
 
       <section id="menu">

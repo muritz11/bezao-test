@@ -119,6 +119,10 @@ a{
     font-size: 35px;
 }
 
+.fs-20{
+    font-size: 20px;
+}
+
 
 
 
@@ -149,4 +153,20 @@ a{
 
 .border-none{
     border: none !important;
+}
+
+
+
+
+
+
+
+@keyframes rotate {
+    from{
+        transform: rotate(-360deg);
+    }
+
+    to{
+        transform: rotate(360deg);
+    }
 }

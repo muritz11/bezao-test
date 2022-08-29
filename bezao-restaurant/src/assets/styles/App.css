@@ -7,6 +7,7 @@
     border-radius: 22px;
     border: none;
     outline: none;
+    cursor: pointer;
 }
 
 .secondary-btn{
@@ -20,10 +21,11 @@
 ******************/
 #header{
     background-color: var(--tomaato);
-    min-height: 100vh;
+    min-height: 659px;
     padding: 52px 16px;
     color: #fff;
     position: relative;
+    overflow: hidden;
 }
 
 .subtext{
@@ -57,6 +59,11 @@
 .header-dish{
     width: 251px;
     height: 251px;
+    animation-name: rotate;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    /* border-radius: 50%; */
 }
 
 .header-vector1{
@@ -175,6 +182,9 @@ footer{
     margin: 22px 26px;
 }
 
+
+
+
 .d-md-show{
     display: none;
 }
@@ -187,5 +197,65 @@ footer{
 
     .d-md-show{
         display: initial;
+    }
+
+    #header{
+        background-color: #fff;
+        padding: 75px 60px;
+        min-height: 50vh;
+    }
+
+    .header-content{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .header-content > .copy > h1{
+        color: #1a1a1a;
+        font-size: 2em;
+    }
+    
+    .header-content > .copy > p{
+        color: #13254A;
+        font-size: 1.1em;
+        font-weight: 400;
+        margin-top: 24px;
+    }
+
+    .header-dish{
+        width: 350px;
+        height: 350px;
+    }
+
+    .copy{
+        padding: 30px;
+    }
+
+    .header-cta{
+        width: 225px;
+        margin-top: 37px;
+    }
+}
+
+
+
+@media screen and (min-width: 1250px) {
+    .header-content > .copy > h1{
+        font-size: 4em;
+    }
+
+    .header-dish{
+        width: 550px;
+        height: 550px;
+    }
+    
+    .header-cta{
+        width: 325px;
+    }
+
+    #header{
+        background-color: #fff;
+        padding: 75px 100px;
     }
 }

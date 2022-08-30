@@ -51,7 +51,7 @@ export const menuSlice = createSlice({
         ],
     reducers: {
         newItem: (state, action) => {
-            state.push(action.payload.cuisine)
+            state.push({ ...action.payload, id: state.length, image: menuDish})
         },
     }
 })

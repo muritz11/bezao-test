@@ -9,6 +9,10 @@ function App() {
   return (
     <>
       <Router>
+        <header>
+            <h1 className='txt-center'>Hello 👋, welcome admin</h1>
+            <p className="header-text txt-center">Here are the menus for today</p>
+        </header>
         <RoutesContainer />
       </Router>
     </>

@@ -4,14 +4,16 @@
     margin-bottom: 17px;
 }
 
-.new-item > button{
+.new-item > .link, .save-btn, .cancel-btn{
     padding: 10px;
     border-radius: 5px;
+    background-color: #eee;
+    display: inline-block;
     border: 1px solid transparent;
     cursor: pointer;
 }
 
-.new-item > button:hover{
+.new-item > .link:hover{
     border: 1px solid #26C58A;
     color: #26C58A;
 }

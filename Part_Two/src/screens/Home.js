@@ -3,6 +3,7 @@ import MenuCard from '../components/cards/menu/MenuCard';
 import { FiPlus } from 'react-icons/fi';
 import '../assets/styles/HomeStyles.css'
 import { useSelector } from 'react-redux';
+import { Link } from 'react-router-dom';
 
 const Home = () => {
 
@@ -14,15 +15,10 @@ const Home = () => {
 
   return (
     <>
-        <header>
-            <h1 className='txt-center'>Hello 👋, welcome admin</h1>
-            <p className="header-text txt-center">Here are the menus for today</p>
-        </header>
-
         <main>
             <div id="menu">
               <div className="new-item">
-                <button><FiPlus /> Add to menu</button>
+                <Link to={'/new-item'} className='link'><FiPlus /> Add to menu</Link>
               </div>
               <div className="menu">
                   {menuList}

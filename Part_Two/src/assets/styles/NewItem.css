@@ -1,0 +1,40 @@
+
+.new-cuisine{
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    width: 50% !important;
+}
+
+.fg{
+    margin-bottom: 25px;
+}
+
+.fg > input, .fg > textarea{
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #aaa;
+    border-radius: 7px;
+    margin-top: 10px;
+    outline: none;
+}
+
+.save-btn{
+    padding: 15px;
+    width: 90px;
+    background-color: #26C58A;
+    color: #fff;
+    margin-right: 20px;
+}
+
+.cancel-btn{
+    padding: 15px;
+}
+
+.err{
+    color: tomato;
+    margin-bottom: 15px;
+}
+
+.success{
+    color: #26C58A;
+    margin-bottom: 15px;
+}

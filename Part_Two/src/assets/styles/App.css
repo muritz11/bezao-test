@@ -1,9 +1,4 @@
 
-.app{
-    background: #f8f8f8;
-}
-
-
 .d-md-show{
     display: none;
 }
@@ -29,11 +24,9 @@ header{
 }
 
 
-/*****************
-* MENU
-******************/
 #menu{
     padding: 121px 16px 80px 16px;
+    margin-bottom: 50px;
 }
 
 .menu{
@@ -61,7 +54,8 @@ a{
     #menu{
         padding: 30px 70px;
         width: 70%;
-        margin: 0 auto;
+        margin-right: auto;
+        margin-left: auto;
     }
 
     #menu .menu{
@@ -78,3 +72,9 @@ a{
     }
 
 }
+
+
+
+/* @keyframes slideInLeft {
+    
+} */

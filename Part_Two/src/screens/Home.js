@@ -11,7 +11,7 @@ const Home = () => {
   const cuisines = useSelector((state) => state.menu)
   const [state, setState] = useState({
     deleteItemId: '',
-    deleteModalOpen: true
+    deleteModalOpen: false
   })
 
   const toggleDeleteModal = (delItemId) => {

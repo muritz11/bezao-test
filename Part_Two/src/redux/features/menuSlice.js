@@ -2,6 +2,7 @@ import { createSlice } from "@reduxjs/toolkit";
 import menuDish from "../../assets/images/menu dish.svg";
 import drawSoup from "../../assets/images/draw soup.svg";
 import eggSauce from "../../assets/images/fried egg sauce.svg";
+import beans from "../../assets/images/beans.svg";
 
 export const menuSlice = createSlice({
     name: 'menu',
@@ -35,18 +36,18 @@ export const menuSlice = createSlice({
                 image: eggSauce
             },
             {
-                id: 1,
+                id: 5,
                 title: 'jellof rice',
                 price: '1,100',
                 description: 'Fried potato/yam chips with egg sauce or any topping of your choice',
                 image: menuDish
             },
             {
-                id: 1,
-                title: 'jellof rice',
+                id: 6,
+                title: 'beans',
                 price: '3,500',
                 description: 'Fried potato/yam chips with egg sauce or any topping of your choice',
-                image: menuDish
+                image: beans
             },
         ],
     reducers: {

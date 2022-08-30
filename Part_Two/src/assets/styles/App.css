@@ -25,7 +25,7 @@ header{
 
 
 #menu{
-    padding: 121px 16px 80px 16px;
+    padding: 0 16px 80px 16px;
     margin-bottom: 50px;
 }
 
@@ -73,8 +73,3 @@ a{
 
 }
 
-
-
-/* @keyframes slideInLeft {
-    
-} */

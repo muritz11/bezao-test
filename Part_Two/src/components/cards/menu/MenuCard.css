@@ -4,6 +4,7 @@
     overflow: hidden;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 1px;
     background-color: #fff;
+    position: relative;
 }
 
 .menu-card > img{
@@ -33,11 +34,27 @@
     margin-bottom: 8px;
 }
 
+.edit{
+    position: absolute;
+    top: 10px;
+    right: 5px;
+}
+
 .action-btns{
     /* background-color: #FFAD14; */
     color: var(--darkGr);
     display: none;
     cursor: pointer;
+}
+
+@media (pointer:none), (pointer:coarse) {
+    .action-btns{
+        display: initial;
+    }
+
+    .edit{
+        color: #26C58A;
+    }
 }
 
 .delete, .edit{

@@ -1,0 +1,84 @@
+
+.menu-card{
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px;
+    background-color: #fff;
+}
+
+.menu-card > img{
+    width: 100%;
+}
+
+.content{
+    padding: 12px;
+}
+
+.price-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.add-to-cart{
+    background-color: var(--tomaato);
+    color: #fff;
+    padding: 4px 5px 2px 5px;
+    border-radius: 7px;
+    border: none;
+    outline: none;
+}
+
+.content > h4, .content > p, .content > div{
+    margin-bottom: 8px;
+}
+
+.action-btns{
+    /* background-color: #FFAD14; */
+    color: var(--darkGr);
+    display: none;
+    cursor: pointer;
+}
+
+.delete, .edit{
+    vertical-align: -webkit-baseline-middle;
+    margin-right: 10px;
+}
+
+.delete:hover{
+    color: red;
+}
+
+.edit:hover{
+    color: green;
+}
+
+@media screen and (min-width: 768px) {
+    .menu-card:hover{
+        transform: scaleY(1.02) translateY(-10px);
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+    }
+
+    .menu-card:hover .action-btns{
+        display: initial;
+    }
+
+    .menu-card:hover .content > h4{
+        color: #FFAD14;
+    }
+
+    .fs-14{
+        font-size: 20px;
+    }
+
+    .fs-10{
+        font-size: 14px;
+    }
+
+    .price-container .fs-14{
+        font-size: 24px;
+        margin-top: 14px;
+        font-weight: 500;
+    }
+
+}

@@ -1,0 +1,80 @@
+
+.app{
+    background: #f8f8f8;
+}
+
+
+.d-md-show{
+    display: none;
+}
+
+.container, .cont{
+    border-radius: 20px;
+}
+
+.my-card{
+    max-width: 520px !important;
+}
+
+.my-nav{
+    margin-right: 0 !important;
+}
+
+header{
+    padding: 50px;
+}
+
+.header-text{
+    margin-top: 20px;
+}
+
+
+/*****************
+* MENU
+******************/
+#menu{
+    padding: 121px 16px 80px 16px;
+}
+
+.menu{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 16px;
+    column-gap: 16px;
+    margin-bottom: 20px;
+}
+
+a{
+    color: inherit;
+}
+
+@media screen and (min-width: 768px) {
+
+    .d-md-none{
+        display: none;
+    }
+
+    .d-md-show{
+        display: initial;
+    }
+    
+    #menu{
+        padding: 30px 70px;
+        width: 70%;
+        margin: 0 auto;
+    }
+
+    #menu .menu{
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 24px;
+        row-gap: 48px;
+    }
+
+    .menu-subheading{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 16px 0 40px;
+    }
+
+}

@@ -1,0 +1,17 @@
+
+.new-item{
+    text-align: right;
+    margin-bottom: 17px;
+}
+
+.new-item > button{
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid transparent;
+    cursor: pointer;
+}
+
+.new-item > button:hover{
+    border: 1px solid #26C58A;
+    color: #26C58A;
+}

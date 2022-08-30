@@ -1,10 +1,17 @@
 import React from 'react'
-import menuDish from "../assets/images/menu dish.svg";
-import drawSoup from "../assets/images/draw soup.svg";
-import eggSauce from "../assets/images/fried egg sauce.svg";
 import MenuCard from '../components/cards/menu/MenuCard';
+import { FiPlus } from 'react-icons/fi';
+import '../assets/styles/HomeStyles.css'
+import { useSelector } from 'react-redux';
 
 const Home = () => {
+
+  const cuisines = useSelector((state) => state.menu)
+
+  const menuList = cuisines.map((cuisine, index) => 
+    <MenuCard name={cuisine.title} desc={cuisine.description} price={cuisine.price} img={cuisine.image} key={index} />
+  )
+
   return (
     <>
         <header>
@@ -14,14 +21,12 @@ const Home = () => {
 
         <main>
             <div id="menu">
-            <div className="menu">
-                <MenuCard name={'jollof rice'} desc={'Fried potato/yam chips with egg sauce or any ...'} price={'1,500'} img={menuDish} />
-                <MenuCard name={'swallow with draw soup'} desc={'Fried potato/yam chips with egg sauce or any ...'} price={'1,500'} img={drawSoup} />
-                <MenuCard name={'jollof rice'} desc={'Fried potato/yam chips with egg sauce or any ...'} price={'1,500'} img={menuDish} />
-                <MenuCard name={'fries with egg sauce'} desc={'Fried potato/yam chips with egg sauce or any ...'} price={'700'} img={eggSauce} />
-                <MenuCard name={'jollof rice'} desc={'Fried potato/yam chips with egg sauce or any ...'} price={'1,500'} img={menuDish} />
-                <MenuCard name={'jollof rice'} desc={'Fried potato/yam chips with egg sauce or any ...'} price={'1,500'} img={menuDish} />
-            </div>
+              <div className="new-item">
+                <button><FiPlus /> Add to menu</button>
+              </div>
+              <div className="menu">
+                  {menuList}
+              </div>
             </div>
         </main>
     </>

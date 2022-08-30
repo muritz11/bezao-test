@@ -4,7 +4,7 @@ import { FiEdit } from "react-icons/fi";
 import { AiOutlineDelete } from 'react-icons/ai';
 import { Link } from 'react-router-dom';
 
-const MenuCard = ({ name, price, img, desc }) => {
+const MenuCard = ({ name, price, img, desc, toggleDel, itemId }) => {
   return (
       <div className="menu-card">
         <img src={img} alt={name} />
@@ -15,9 +15,8 @@ const MenuCard = ({ name, price, img, desc }) => {
                 <p className="fs-14 fw-700 txt-dark">&#8358; {price}</p>
                 <div className='action-btns'>
                   <Link to={'edit'}><FiEdit className='fs-20 edit' /></Link>
-                  <AiOutlineDelete className='fs-20 delete' />
+                  <AiOutlineDelete onClick={() => {toggleDel(itemId)}} className='fs-20 delete' />
                 </div>
-                {/* <button className="primary-btn ">Place Order</button> */}
             </div>
         </div>
       </div>

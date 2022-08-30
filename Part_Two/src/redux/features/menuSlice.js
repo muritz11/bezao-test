@@ -52,10 +52,14 @@ export const menuSlice = createSlice({
     reducers: {
         newItem: (state, action) => {
             state.push({ ...action.payload, id: state.length, image: menuDish})
+            console.log(state)
+        },
+        deleteDish: (state, action) => {
+            state.splice(state.findIndex((val) => val.id === action.payload), 1);
         },
     }
 })
 
 
-export const { newItem } = menuSlice.actions
+export const { newItem, deleteDish } = menuSlice.actions
 export default menuSlice.reducer

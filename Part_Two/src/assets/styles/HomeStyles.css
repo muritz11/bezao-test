@@ -4,7 +4,7 @@
     margin-bottom: 17px;
 }
 
-.new-item > .link, .save-btn, .cancel-btn{
+.new-item > .link, .save-btn, .cancel-btn, .delete-btn{
     padding: 10px;
     border-radius: 5px;
     background-color: #eee;

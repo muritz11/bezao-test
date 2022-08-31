@@ -308,6 +308,10 @@ a:hover, .nav-links a:hover, .signin-btn:hover{
         margin-bottom: 20px;
     }
 
+    .mt-40-lg{
+        margin-top: 40px;
+    }
+
 }
 
 
@@ -326,13 +330,21 @@ a:hover, .nav-links a:hover, .signin-btn:hover{
         width: 325px;
     }
 
+
     #header{
         background-color: #fff;
         padding: 75px 100px;
     }
     
-    #menu, #blog, footer{
-        padding: 100px 70px 130px 70px;
+    #menu, #blog{
+        padding: 100px 150px 130px 150px;
     }
 
+}
+
+
+@media screen and (min-width: 1440px) {
+    #menu .menu{
+        grid-template-columns: repeat(4, 1fr);
+    }
 }

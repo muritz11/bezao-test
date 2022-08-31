@@ -70,7 +70,7 @@ function App() {
           <MenuCard name={'jollof rice'} desc={'Fried potato/yam chips with egg sauce or any ...'} price={'1,500'} img={menuDish} />
           <MenuCard name={'jollof rice'} desc={'Fried potato/yam chips with egg sauce or any ...'} price={'1,500'} img={menuDish} />
         </div>
-        <div className="txt-center">
+        <div className="txt-center mt-40-lg">
           <button className='primary-btn'>full menu</button>
         </div>
       </section>

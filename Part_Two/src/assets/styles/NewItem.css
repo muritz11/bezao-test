@@ -21,7 +21,7 @@
 .save-btn{
     padding: 15px;
     width: 90px;
-    background-color: #26C58A;
+    background-color: #26C58A !important;
     color: #fff;
     margin-right: 20px;
 }

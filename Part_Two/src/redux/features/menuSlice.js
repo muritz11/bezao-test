@@ -8,21 +8,21 @@ const state = [
     {
         id: 1,
         title: 'jellof rice',
-        price: '1,500',
+        price: '1500',
         description: 'Fried potato/yam chips with egg sauce or any topping of your choice',
         image: menuDish
     },
     {
         id: 2,
         title: 'Swallow With Draw Soup',
-        price: '1,500',
+        price: '1500',
         description: 'Fried potato/yam chips with egg sauce or any topping of your choice',
         image: drawSoup
     },
     {
         id: 3,
         title: 'jellof rice',
-        price: '1,500',
+        price: '1500',
         description: 'Fried potato/yam chips with egg sauce or any topping of your choice',
         image: menuDish
     },
@@ -36,14 +36,14 @@ const state = [
     {
         id: 5,
         title: 'jellof rice',
-        price: '1,100',
+        price: '1100',
         description: 'Fried potato/yam chips with egg sauce or any topping of your choice',
         image: menuDish
     },
     {
         id: 6,
         title: 'beans',
-        price: '3,500',
+        price: '3500',
         description: 'Fried potato/yam chips with egg sauce or any topping of your choice',
         image: beans
     },
@@ -63,12 +63,14 @@ export const menuSlice = createSlice({
             state.splice(state.findIndex((val) => val.id === action.payload), 1);
             localStorage.setItem("menuItems", JSON.stringify(state))
         },
-        persistMenu: (state, action) => {
-            state = action.payload
+        editDish: (state, action) => {
+            const dishIndex = state.findIndex((val) => val.id === action.payload.index)
+            state[dishIndex] = { ...state[dishIndex], ...action.payload }
+            localStorage.setItem("menuItems", JSON.stringify(state))
         }
     }
 })
 
 
-export const { newItem, deleteDish, persistMenu } = menuSlice.actions
+export const { newItem, deleteDish, editDish } = menuSlice.actions
 export default menuSlice.reducer

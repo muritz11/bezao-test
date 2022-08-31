@@ -5,12 +5,10 @@ import { FiPlus } from 'react-icons/fi';
 import '../assets/styles/HomeStyles.css'
 import { useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
-// import { persistMenu } from '../redux/features/menuSlice'
 import DeleteModal from '../components/cards/deleteModal/DeleteModal';
 
 const Home = () => {
 
-  // const retrievedData = JSON.parse(localStorage.getItem("menuItems"))
   const cuisines = useSelector((state) => state.menu)
   const [state, setState] = useState({
     deleteItemId: '',

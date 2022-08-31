@@ -62,6 +62,10 @@
     margin-right: 10px;
 }
 
+.delete{
+    margin-top: 10px;
+}
+
 .delete:hover{
     color: red;
 }

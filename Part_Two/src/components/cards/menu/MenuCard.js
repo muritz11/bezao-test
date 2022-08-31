@@ -22,7 +22,7 @@ const MenuCard = ({ name, price, img, desc, toggleDel, itemId }) => {
                 <p className="fs-14 fw-400 txt-dark">&#8358; {price.toLocaleString('en-US')}</p>
                 <div className='action-btns'>
                   <button onClick={() => {redirectToEdit(itemId)}}><FiEdit className='fs-20 edit' /></button>
-                  <AiOutlineDelete onClick={() => {toggleDel(itemId)}} className='fs-20 delete' />
+                  <AiOutlineDelete onClick={() => {toggleDel(itemId)}} className='delete' />
                 </div>
             </div>
         </div>
